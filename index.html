@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<style>
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+
+    }
+  }
+
+
+  .container {
+
+   display:flex;
+ align-items:center;
+ justify-content:center;}
+
+
+ .center {
+   padding:10px 0;
+   border:1px;
+   image-orientation:center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Didot', serif;
+   font-size: 16px;
+   color:black;
+ }
+
+p {display:flex;
+text-align:center;
+font-family: 'Didot', serif;
+font-size: 16px;
+color:black;
+}
+
+h1 {display:flex;
+align-text:center;
+justify-content:center;
+font-family: 'Didot', serif;
+font-size: 60px;
+font-style: normal;
+}
+
+#title{
+  padding: 5px;
+}
+
+h2{
+  text-align: center;
+
+}
+
+a {
+  font-family: 'Didot', serif;
+  font-size: 16px;
+  color:black;
+  font-weight:bold;
+  justify-content:center;
+  text-align: center;
+}
+
+
+*{
+  box-sizing:border-box;
+
+}
+
+
+body{
+  font-family: 'Didot', serif;
+  margin:0;
+  font-size: 16px;
+
+
+
+}
+
+
+#img-caption{
+  color:black;
+  font-family: 'Didot', serif;
+  font-size: 16px;
+  font-style: normal;
+  justify-content:center;
+  text-align: center;
+}
+
+#help{
+  color:black;
+  font-family: 'Didot', serif;
+  font-size: 16px;
+  font-style: normal;
+  justify-content:center;
+  text-align: center;
+  background-color: #F0F0F0;
+
+
+}
+
+#tribute-info {
+  margin:15px auto 0;
+
+}
+
+#tribute-link {
+  color:#DC143C;
+
+
+}
+
+#albums {
+  max-width: 800px;
+  margin: 10px auto 0;
+  text-align: center;
+  color:black;
+  font-family: 'Didot', serif;
+  font-size: 12px;
+  padding:10px;
+
+}
+
+div.desc{
+  padding:10px;
+  text-align: center;
+  color:black;
+  font-family: 'Didot', serif;
+  font-size: 12px;
+  font-weight:bold;
+  background-color: #eee;
+}
+
+
+
+ul.a{
+  list-style-type: circle;
+}
+
+ul.b{
+  list-style-type: circle;
+}
+
+nav{
+  background-color: #111;
+  padding: 15px;
+
+}
+
+ul{
+
+display:flex;
+justify-content: center;
+margin:0;
+padding:0;
+list-style-type: none;
+}
+
+ul li a{
+color:#fff;
+padding: 15px;
+text-decoration: none;
+
+}
+
+.container{
+  display:flex;
+  max-width: 700px;
+  margin:15px auto 0;
+  text-decoration: none;
+ line-height: 25px;
+ word-spacing: normal;
+ text-align: justify;
+}
+
+section{
+  padding:15px;
+  margin:15px auto 0;
+
+}
+
+.bg-red{
+  background-color: #DC143C;
+  color:#fff;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+.about-p {
+
+  position:relative;
+  font-family: 'Didot', serif;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  width:700px;
+
+}
+
+.img-zoom {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.img-zoom img {
+  display: block;
+  width: 100%;
+  transition: 0.4s ease;
+  transform-origin: 50% 50%; /* center zoom */
+}
+.img-zoom img:hover {
+  transform: scale(1.21);
+}
+
+
+.social-ul a{
+font-size: 38px;
+padding:10px;
+margin:0 15px;
+
+}
+
+.social-ul a {
+  font-size: 38px;
+  line-height: 60px;
+  transition: .5s;
+  color:#000;
+
+}
+
+.social-ul a:hover{
+   color: #fff;
+}
+
+.social-ul li a{
+  position:relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding:3px;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  transition: .5s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+
+}
+
+.socail-ul li a:hover{
+  transform: translate(0,-10px);
+
+}
+
+
+
+footer{
+  background-color: #111;
+  color:#fff;
+  padding:15px;
+  text-align: center;
+  font-family: 'Didot', serif;
+  font-size: 12px;
+}
+
+
+
+  </style>
+
+<nav>
+  <ul>
+    <li><a href="#tribute-info">About</a></li>
+    <li><a href="#latest album">Latest Album</a></li>
+    <li><a href="#remembering">Remember</a></li>
+    <li><a href="#social">Follow</a></li>
+  </ul>
+</nav>
+
+  </head>
+
+
+  <body>
+  <div id="main">
+
+      <div>
+  <h1 id="title">Chester Bennington</h1>
+
+  <p class="center"> March 20, 1976 - July 20, 2017) </p>
+
+
+  <div id="img-div">
+    <div class="container">
+    <img src="https://statics.sportskeeda.com/editor/2017/07/0cf7f-1500636003-800.jpg" alt="Chester Bennington Portrait" id="image">
+    </div>
+
+    <p id="img-caption" class="center"><em>The Man Who Inspired Billions to Live</em></p>
+
+
+      <div class="row">
+        <div class="column"></div>
+  <div class="column">
+
+  <img src="https://s.abcnews.com/images/Entertainment/linkin-park-chester-bennington-nc-jt-170803_hpMain_2_1x1_992.jpg" alt="Chester Bennington with Mic" id="image">
+  <img src="https://i.pinimg.com/736x/9c/d6/74/9cd6748975dac392a50b37961d7a121c.jpg" alt="Chester Bennington Smiling" id="image">
+    <img src="https://i.pinimg.com/736x/08/ea/cd/08eacd3b5f2f37b4574ad5427dc56893.jpg" alt="Chester Bennington Talking to Fans" id="image">
+    <img src="https://lh3.googleusercontent.com/ERJSRvXu0oDBUFu62Vcrxwyrth8GIx-M_7QXF6OqOfSxT3CahPvG0tJyCoasnlwnHPctOwU=s170" alt="Chester Bennington Eyes" id="image">
+    </div>
+
+    <div class="column">
+  <img src="https://www.thisdayinmusic.com/wp-content/uploads/2019/07/Chester-Bennington.jpg" alt="Chester Bennington Singing" id="image">
+  <img src="https://cdn.cnn.com/cnnnext/dam/assets/170720173507-chester-bennington-linkin-park-may-2017-file-exlarge-169.jpg" alt="Chester Bennington Hold Mic Up High" id="image">
+      <img src="https://vignette.wikia.nocookie.net/sawfilms/images/f/f0/Chester-bennington.jpg/revision/latest?cb=20171024092504" alt="Chester Bennington Smiling" id="image">
+  <img src="https://i.pinimg.com/474x/07/e3/e7/07e3e783a6d614dc20d2404dc00c88d2.jpg" alt="Chester Bennington with Hands Raised Up" id="image">
+</div>
+</div>
+  </div>
+  </div>
+
+
+  <div id="tribute-info">
+<div class="container">
+    <h2> About </h2>
+  </div>
+
+<div class="container">
+  <p{text-align: center;justify-content: center;display:inline-block;width:336px;height:280px; position:relative; right: 20px;}>
+<strong> Chester Bennington </strong>
+ is an american rock singer.
+ He is best known for being the front man of alternative rock band Linkin Park and Dead By Sunrise.
+ He is one of the top singers of his Genre.</p>
+
+<p{text-align: center;justify-content: center;display:inline-block;width:336px;height:280px; position:relative; right: 20px;}>
+<strong>Chester Bennington</strong> was born on March 20, 1976 in Phoenix, Arizona.
+He took interest in music at a young age, citing Depeche Mode and Stone Temple Pilots as early inspirations.
+His parents divorced when he was 11 years old and he started abusing Marijuana, Alcohol, Cocaine and LSD.
+Bennington first began singing with a band called Sean Dowdell and His Friends?.
+He then moved on to Grey Daze.
+He left Grey Daze in 1998.
+He later joined <a rel="nofollow" target="_blank" title="Mike Shinoda" href="https://short-biography.com/mike-shinoda.htm"> Mike Shinoda </a> and his band Linkin Park.
+The band has hits such as Numb, Faint, Crawling and In The End.
+</p>
+
+<p{text-align: center;justify-content: center;display:inline-block;width:336px;height:280px; position:relative; right: 20px;}>
+Chester Bennington has one child, Jaime, from a previous relationship with Elka Brand.
+He also adopted his son, Isaiah.
+Bennington married his first wife, <strong>Samantha Marie Olit</strong>, on October 31, 1996.
+They had one child together, Draven.
+Bennington’s relationship with his first wife declined during his early years with <em>Linkin Park</em>, and they divorced in 2005.
+He then married <strong>Talinda Ann Bentley</strong>, a former Playboy model, with whom he has three children: <strong>Tyler Lee Bennington</strong> and twins <strong>Lilly</strong> and <strong>Lila</strong> (born 2011).
+The wedding ceremony was custom designed. They live in Gilbert, Arizona.
+</p>
+
+</div>
+</div>
+
+<div class="container">
+<h2> Major Works </h2>
+</div>
+
+<section id="albums">
+
+
+   <div class="row">
+     <div class="column"></div>
+  <div class="column">
+    <div class="img-zoom">
+<a href="https://www.amazon.com/Hybrid-Theory-Linkin-Park/dp/B00004Z459" target="_blank">
+<img src="https://images-na.ssl-images-amazon.com/images/I/91NQO2l3RZL._SL1500_.jpg" alt="a warrior with hat" width="300" height="200" id="image"></a></div>
+<div class="desc">Hybrid Theory</div>
+
+
+<!--<a target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/91NQO2l3RZL._SL1500_.jpg" alt="a warrior with hat" id="image"></a>
+<div class="desc">Hybrid Theory</div>-->
+<div class="img-zoom">
+<a href="https://www.amazon.com/Meteora-Linkin-Park/dp/B00008H2LB/ref=sr_1_1?dchild=1&keywords=meteora+linkin+park&qid=1589808677&s=music&sr=1-1" target="_blank">
+<img src="https://images-na.ssl-images-amazon.com/images/I/71-nhMkC-vL._SL1425_.jpg" alt="one man painting" width="300" height="200" id="image"></a></div>
+<div class="desc">Meteora</div>
+
+
+<!--<a target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/71-nhMkC-vL._SL1425_.jpg" alt="one man painting" id="image"></a>
+<div class="desc">Meteora</div>-->
+<div class="img-zoom">
+<a href="https://www.amazon.com/Minutes-Midnight-Linkin-Park/dp/B000OCXMAE/ref=sr_1_1?dchild=1&keywords=minutes+to+midnight+linkin+park&qid=1589808746&s=music&sr=1-1" target="_blank">
+<img src="https://images-na.ssl-images-amazon.com/images/I/41rZ7Qc0xuL.jpg" alt="five guys standing" width="300" height="200" id="image"></a></div>
+<div class="desc">Minutes to Midnight</div>
+</div>
+
+<!--<a target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/41rZ7Qc0xuL.jpg" alt="five guys standing" id="image"></a>
+<div class="desc">Minutes to Midnight</div>-->
+
+
+<div class="column">
+  <div class="img-zoom">
+  <a href="https://www.amazon.com/Living-Things-Linkin-Park/dp/B007UQ5Z1G/ref=sr_1_1?dchild=1&keywords=living+things+linkin+park&qid=1589808404&s=music&sr=1-1" target="_blank">
+<img src="https://images-na.ssl-images-amazon.com/images/I/61HhTXFUEFL._SL1437_.jpg" alt="man breaking into pieces" width="300" height="200" id="image"></a></div>
+<div class="desc">Living Things</div>
+
+<!--<a target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/61HhTXFUEFL._SL1437_.jpg" alt="man breaking into pieces" id="image"></a>
+<div class="desc">Living Things</div>-->
+<div class="img-zoom">
+<a href="https://www.amazon.com/Hunting-Party-Linkin-Park/dp/B00K03VZ1K/ref=sr_1_2?dchild=1&keywords=the+hunting+party+linkin+park&qid=1589808945&s=music&sr=1-2" target="_blank">
+<img src="https://m.media-amazon.com/images/I/71qWzE4dckL._SS500_.jpg" alt="shooting arrow" width="300" height="200" id="image"></a></div>
+<div class="desc">The Hunting Party</div>
+
+<!--<a target="_blank"><img src="https://m.media-amazon.com/images/I/71qWzE4dckL._SS500_.jpg" alt="shooting arrow" id="image"></a>
+<div class="desc">The Hunting Party</div>-->
+<div class="img-zoom">
+<a href="https://www.amazon.com/One-More-Light-Linkin-Park/dp/B01MZGQSOT/ref=sr_1_1?dchild=1&keywords=one+more+light+linkin+park&qid=1589809038&s=music&sr=1-1" target="_blank">
+<img src="https://m.media-amazon.com/images/I/81yLxXICN4L._SS500_.jpg" alt="people dancing" width="300" height="200" id="image"></a></div>
+<div class="desc">One More Light</div>
+</div>
+</div>
+
+</section>
+
+<!--<a target="_blank"><img src="https://m.media-amazon.com/images/I/81yLxXICN4L._SS500_.jpg" alt="people dancing" id="image"></a>
+<div class="desc">One More Ligh</div>
+</div>
+</div>
+</section>-->
+
+
+<section id="end">
+  <div class="container">
+
+
+<p>On July 20, 2017, Chester Bennington was found dead in his home.
+He had committed suicide by hanging.
+It was reported that he was very upset following the death of his friend Chris Cornell.
+Bennington committed suicide on what would have been Cornell's 53rd birthday.</p>
+
+</section>
+</div>
+</div>
+
+<div class="container">
+<section id="latest album">
+
+  <h2>Latest Album "One More Light"</h2>
+
+  <div-class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tm8LGxTLtQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</section>
+
+<div class="container">
+<section id="remembering">
+
+  <h2> Remember </h2>
+
+  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I wish he could&#39;ve been there to see that change. He was part of the reasons I felt any hope... Goodbye, Chester. Rest In Peace <a href="https://t.co/xc9ZjBgr2P">pic.twitter.com/xc9ZjBgr2P</a></p>&mdash; Sevan~🌻 Zines in bio~🖋️ (@sevaniel) <a href="https://twitter.com/sevaniel/status/888165592506806272?ref_src=twsrc%5Etfw">July 20, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</section>
+</div>
+
+<div class="container">
+<section id="more">
+
+  <p> If you want to know more about this talanted artist, </p>
+
+  <a href="https://en.wikipedia.org/wiki/Chester_Bennington" target="_blank" class="center" id="tribute-link">CLICK HERE</a>
+
+</section>
+</div>
+
+<div class="container">
+<section id="help">
+
+  <p> In case you or someone you know needs support, here are some resources:
+Suicide Prevention Lifeline 1-800-273-TALK
+Crisis Text Line, the free, nationwide, 24/7 text message service for people in crisis, is here to support. For support in the United States, text HELLO to 741741 or message at facebook.com/CrisisTextLine.</p>
+
+<p{text align:center;}> For support outside the US, find resources at</p>
+
+<a href="http://www.suicide.org/international-suicide-hotlines.html" target="_blank" class="center">http://www.suicide.org/international-suicide-hotlines.html</a>
+
+</section>
+</div>
+
+<section id="social" class="bg-red">
+
+  <h3>Follow</h3>
+
+<ul class="container social-ul">
+<ul>
+  <li><a href="https://www.facebook.com/linkinpark/" target="_blank" class="fa fa-facebook"></a></li>
+  <li><a href="https://www.instagram.com/linkinpark/" target="_blank" class="fa fa-instagram"></a></li>
+  <li><a href="https://twitter.com/linkinpark"target="_blank" class="fa fa-twitter"></a></li>
+  <li><a href="https://www.spotify.com/int/linkinpark/"target="_blank" class="fa fa-spotify"></a></li>
+</ul>
+</div>
+
+</section>
+
+  </body>
+
+  <footer>
+
+  &copy 2020 ig_blui > to the man who screamed for us <
+
+  </footer>
+
+</html>
